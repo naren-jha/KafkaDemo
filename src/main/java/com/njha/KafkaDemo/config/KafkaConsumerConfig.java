@@ -45,4 +45,12 @@ public class KafkaConsumerConfig {
         factory.setConsumerFactory(consumerFactory);
         return factory;
     }
+
+    @Bean
+    public ConcurrentKafkaListenerContainerFactory<String, User> adultUserConsumerListenerFactory(ConsumerFactory<String, User> consumerFactory) {
+        ConcurrentKafkaListenerContainerFactory<String, User> factory = new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(consumerFactory);
+        factory.setRecordFilterStrategy(record -> record.value().getAge() < 18); // ignores users of age < 18
+        return factory;
+    }
 }

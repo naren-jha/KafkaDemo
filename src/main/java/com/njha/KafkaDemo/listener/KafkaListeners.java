@@ -18,4 +18,24 @@ public class KafkaListeners {
         System.out.println("New user registered..");
         System.out.println(user);
     }
+
+    @KafkaListener(
+            topics = KafkaConstants.USER_REGISTRATION_TOPIC,
+            groupId = "onboarding-consumer2",
+            containerFactory = "userConsumerListenerFactory"
+    )
+    public void userRegistrationTopicListener2(User user) {
+        System.out.println("Second listener for user registration..");
+        System.out.println(user);
+    }
+
+    @KafkaListener(
+            topics = KafkaConstants.USER_REGISTRATION_TOPIC,
+            groupId = "onboarding-consumer3",
+            containerFactory = "adultUserConsumerListenerFactory"
+    )
+    public void adultUserRegistrationListener(User user) {
+        System.out.println("A new adult user registered..");
+        System.out.println(user);
+    }
 }
