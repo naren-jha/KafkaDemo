@@ -29,3 +29,6 @@
 
 Verify data
 <img width="1519" alt="image" src="https://user-images.githubusercontent.com/58611230/164837979-9626ec90-a5c2-494e-979c-9f108ad98e17.png">
+
+Verify consumer data reception
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/58611230/164838079-d027fd2e-e8bc-4f6f-bea3-4be4c6ae46b9.png">
