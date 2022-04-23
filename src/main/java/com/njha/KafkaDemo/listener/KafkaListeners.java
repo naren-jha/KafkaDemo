@@ -14,7 +14,7 @@ public class KafkaListeners {
             groupId = "onboarding-consumer",
             containerFactory = "userConsumerListenerFactory"
     )
-    public void userRegistrationTopicListener(@Payload User user) {
+    public void userRegistrationTopicListener(User user) {
         System.out.println("New user registered..");
         System.out.println(user);
     }
