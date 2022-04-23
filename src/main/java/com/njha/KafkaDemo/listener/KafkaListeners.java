@@ -3,7 +3,6 @@ package com.njha.KafkaDemo.listener;
 import com.njha.KafkaDemo.common.KafkaConstants;
 import com.njha.KafkaDemo.model.User;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -36,6 +35,16 @@ public class KafkaListeners {
     )
     public void adultUserRegistrationListener(User user) {
         System.out.println("A new adult user registered..");
+        System.out.println(user);
+    }
+
+    @KafkaListener(
+            topics = KafkaConstants.USER_REGISTRATION_TOPIC,
+            groupId = "onboarding-consumer6",
+            containerFactory = "userConsumerListenerFactory"
+    )
+    public void userRegistrationTopicListener3(User user) {
+        System.out.println("third listener for user registration..");
         System.out.println(user);
     }
 }

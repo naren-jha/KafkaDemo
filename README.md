@@ -6,6 +6,8 @@
 
 ### Docs
 * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#messaging.kafka.receiving
+* https://kafka.apache.org/documentation/#producerconfigs
+* https://kafka.apache.org/documentation/#consumerconfigs
 
 ### Articles
 #### Stackoverflow
