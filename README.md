@@ -28,19 +28,19 @@
 }'`
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
 
-Verify data
+Verify data is pushed correctly
 <img width="1519" alt="image" src="https://user-images.githubusercontent.com/58611230/164837979-9626ec90-a5c2-494e-979c-9f108ad98e17.png">
 
-Verify consumer data reception
+Verify data reception by consumer
 <img width="1039" alt="image" src="https://user-images.githubusercontent.com/58611230/164838079-d027fd2e-e8bc-4f6f-bea3-4be4c6ae46b9.png">
 
 
 ## SETUP
 ### Kafka, Zookeeper, Docker setup
 first check if docker is installed docker -v If not, then install docker first 
-> brew install --cask docker
-then open docker app
-then create a file called docker-compose.yml and paste following content into it
+**brew install --cask docker**
+
+then create a file called docker-compose.yml in user home directory and paste following content into it
 
 `version: "3"
 services:
