@@ -17,6 +17,7 @@
 * https://www.baeldung.com/spring-kafka
 
 
+## Testing
 #### Curl
 `curl --location --request POST 'localhost:8081/user/pushToKafka' \
 --header 'Content-Type: application/json' \
@@ -32,3 +33,40 @@ Verify data
 
 Verify consumer data reception
 <img width="1039" alt="image" src="https://user-images.githubusercontent.com/58611230/164838079-d027fd2e-e8bc-4f6f-bea3-4be4c6ae46b9.png">
+
+
+## SETUP
+### Kafka, Zookeeper, Docker setup
+first check if docker is installed docker -v If not, then install docker first 
+> brew install --cask docker
+then open docker app
+then create a file called docker-compose.yml and paste following content into it
+
+`version: "3"
+services:
+  zookeeper:
+	image: 'bitnami/zookeeper:latest'
+	container_name: zookeeper
+	ports:
+  	- '2181:2181'
+	environment:
+  	- ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+	image: 'bitnami/kafka:latest'
+	container_name: kakfa
+	ports:
+  	- '9092:9092'
+	environment:
+  	- KAFKA_BROKER_ID=1
+  	- KAFKA_LISTENERS=PLAINTEXT://:9092
+  	- KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://127.0.0.1:9092
+  	- KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+  	- ALLOW_PLAINTEXT_LISTENER=yes
+	depends_on:
+  	- zookeeper`
+
+then run
+**docker-compose -f docker-compose.yml up**
+or run using docker desktop client
+<img width="1261" alt="image" src="https://user-images.githubusercontent.com/58611230/164838259-fa2e5070-c51b-4337-973f-4f08c64f3c2f.png">
+
