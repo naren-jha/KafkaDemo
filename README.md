@@ -25,4 +25,7 @@
     "name": "Katie Jacobs",
     "age": 35
 }'`
-<img width="920" alt="image" src="https://user-images.githubusercontent.com/58611230/164837884-aeaf574a-654c-4cbb-85e2-58c8ad3be100.png">
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
+
+Verify data
+<img width="1519" alt="image" src="https://user-images.githubusercontent.com/58611230/164837979-9626ec90-a5c2-494e-979c-9f108ad98e17.png">
