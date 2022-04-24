@@ -5,10 +5,10 @@
 * https://youtu.be/SqVfCyfCJqw
 
 ### Docs
+* https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
 * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#messaging.kafka.receiving
 * https://kafka.apache.org/documentation/#producerconfigs
 * https://kafka.apache.org/documentation/#consumerconfigs
-* https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
 
 ### Articles
 #### Stackoverflow
