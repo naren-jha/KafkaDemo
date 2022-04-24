@@ -8,11 +8,15 @@
 * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#messaging.kafka.receiving
 * https://kafka.apache.org/documentation/#producerconfigs
 * https://kafka.apache.org/documentation/#consumerconfigs
+* https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
 
 ### Articles
 #### Stackoverflow
 * https://stackoverflow.com/search?q=user:1240763+[spring-kafka]
-* https://stackoverflow.com/questions/48254650/spring-kafka-trying-to-understand-how-things-work-behind-the-scenes?rq=1
+* Listeners and concurrency:
+* https://stackoverflow.com/a/68978435/4210068
+* https://stackoverflow.com/a/55033589/4210068
+* https://stackoverflow.com/q/48254650/4210068
 
 
 #### Others

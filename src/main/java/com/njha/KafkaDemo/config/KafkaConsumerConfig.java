@@ -28,10 +28,11 @@ public class KafkaConsumerConfig {
 
         // https://kafka.apache.org/documentation/#consumerconfigs
 
-        // we can set consumer group at config/factory level. then this can be ignored at the llistener level.
+        // we can set consumer group at config/factory level. then this can be ignored at the listener level.
         // props.put(ConsumerConfig.GROUP_ID_CONFIG, "onboarding-consumer");
 
-        // set consumption strategy for new consumer groups
+        // what should happen when there is no initial offset in Kafka or if the current offset does not exist any more on the server
+        // for example a new consumer groups - this will set consumption strategy for new consumer groups
         // props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest"); // values: earliest, latest. Default value: latest
         // earliest: When a new consumer group is registered for the very first time. All existing messages in the topic will be replayed to the consumer group.
         // latest: Default value. In this case, new consumer groups too will wait for new messages to be pushed in the topic. It'll not consume existing messages.
@@ -52,6 +53,14 @@ public class KafkaConsumerConfig {
     public ConcurrentKafkaListenerContainerFactory<String, User> userConsumerListenerFactory(ConsumerFactory<String, User> consumerFactory) {
         ConcurrentKafkaListenerContainerFactory<String, User> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory);
+
+        // factory.setConcurrency(3); // https://stackoverflow.com/a/55033589/4210068
+
+        // factory.setBatchListener(true);
+        // factory.getContainerProperties().setPollTimeout(3000);
+        // factory.getContainerProperties().setAckMode(AbstractMessageListenerContainer.AckMode.BATCH);
+        // factory.setAckDiscarded(true);
+
         return factory;
     }
 
