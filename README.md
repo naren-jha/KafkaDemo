@@ -27,13 +27,13 @@
 
 ## Testing
 #### Curl
-`curl --location --request POST 'localhost:8081/user/pushToKafka' \
+```curl --location --request POST 'localhost:8081/user/pushToKafka' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "id": 10000,
     "name": "Katie Jacobs",
     "age": 35
-}'`
+}'```
 
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
 
@@ -53,7 +53,7 @@ If not, then install docker first
 
 then create a file called docker-compose.yml in user home directory and paste following content into it
 
-`version: "3"
+```version: "3"
 services:
   zookeeper:
 	image: 'bitnami/zookeeper:latest'
@@ -74,7 +74,7 @@ services:
   	- KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
   	- ALLOW_PLAINTEXT_LISTENER=yes
 	depends_on:
-  	- zookeeper`
+  	- zookeeper```
 
 then run
 **docker-compose -f docker-compose.yml up**
