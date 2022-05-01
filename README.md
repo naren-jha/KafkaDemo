@@ -34,6 +34,7 @@
     "name": "Katie Jacobs",
     "age": 35
 }'`
+
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
 
 Verify data is pushed correctly
@@ -45,7 +46,9 @@ Verify data reception by consumer
 
 ## SETUP
 ### Kafka, Zookeeper, Docker setup
-first check if docker is installed docker -v If not, then install docker first 
+first check if docker is installed 
+**docker -v** 
+If not, then install docker first 
 **brew install --cask docker**
 
 then create a file called docker-compose.yml in user home directory and paste following content into it
