@@ -83,7 +83,9 @@ services:
 ```
 
 then run
+
 **docker-compose -f docker-compose.yml up**
+
 or run using docker desktop client
 
 <img width="1261" alt="image" src="https://user-images.githubusercontent.com/58611230/164838259-fa2e5070-c51b-4337-973f-4f08c64f3c2f.png">
