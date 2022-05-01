@@ -27,20 +27,24 @@
 
 ## Testing
 #### Curl
-`curl --location --request POST 'localhost:8081/user/pushToKafka' \
+```javascript
+curl --location --request POST 'localhost:8081/user/pushToKafka' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "id": 10000,
     "name": "Katie Jacobs",
     "age": 35
-}'`
+}'
+```
 
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
 
 Verify data is pushed correctly
+
 <img width="1519" alt="image" src="https://user-images.githubusercontent.com/58611230/164837979-9626ec90-a5c2-494e-979c-9f108ad98e17.png">
 
 Verify data reception by consumer
+
 <img width="1039" alt="image" src="https://user-images.githubusercontent.com/58611230/164838079-d027fd2e-e8bc-4f6f-bea3-4be4c6ae46b9.png">
 
 
@@ -81,5 +85,6 @@ services:
 then run
 **docker-compose -f docker-compose.yml up**
 or run using docker desktop client
+
 <img width="1261" alt="image" src="https://user-images.githubusercontent.com/58611230/164838259-fa2e5070-c51b-4337-973f-4f08c64f3c2f.png">
 
