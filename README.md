@@ -27,13 +27,13 @@
 
 ## Testing
 #### Curl
-```curl --location --request POST 'localhost:8081/user/pushToKafka' \
+`curl --location --request POST 'localhost:8081/user/pushToKafka' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "id": 10000,
     "name": "Katie Jacobs",
     "age": 35
-}'```
+}'`
 
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/58611230/164837947-3b8ab0ec-3f99-4e04-8e3b-fcac95613370.png">
 
