@@ -86,7 +86,9 @@ then run
 
 **docker-compose -f docker-compose.yml up**
 docker compose up
+
 docker compose up -d
+
 -d(for detach)
 
 or run using docker desktop client
