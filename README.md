@@ -6,15 +6,9 @@
 * https://www.madhur.co.in/blog/2020/08/30/kafka-consumer-multithreading.html#:~:text=In%20the%20multi%2Dthreaded%20consumer,them%20to%20process%20in%20parallel.
 * https://docs.google.com/document/d/1kFx9WSU86ivEemsnacM1y4yG6cCNeIeFxiBYjJ5pvVU/edit
 * https://youtu.be/SqVfCyfCJqw
+* https://www.baeldung.com/spring-kafka
 
-### Docs
-* https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
-* https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#messaging.kafka.receiving
-* https://kafka.apache.org/documentation/#producerconfigs
-* https://kafka.apache.org/documentation/#consumerconfigs
-
-### Articles
-#### Stackoverflow
+#### Stackoverflow -
 * https://stackoverflow.com/search?q=user:1240763+[spring-kafka]
 * Listeners and concurrency:
 * https://stackoverflow.com/a/68978435/4210068
@@ -23,9 +17,12 @@
 * https://stackoverflow.com/a/64012713/4210068
 * https://stackoverflow.com/a/50254280/4210068
 
+### Docs
+* https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
+* https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#messaging.kafka.receiving
+* https://kafka.apache.org/documentation/#producerconfigs
+* https://kafka.apache.org/documentation/#consumerconfigs
 
-#### Others
-* https://www.baeldung.com/spring-kafka
 
 
 ## Testing
