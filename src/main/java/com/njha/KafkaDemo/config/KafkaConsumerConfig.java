@@ -51,6 +51,8 @@ public class KafkaConsumerConfig {
 
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, User> userConsumerListenerFactory(ConsumerFactory<String, User> consumerFactory) {
+        
+        // https://docs.spring.io/spring-kafka/docs/current/reference/html/#message-listener-container
         ConcurrentKafkaListenerContainerFactory<String, User> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory);
 
