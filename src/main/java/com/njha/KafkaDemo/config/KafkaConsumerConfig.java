@@ -55,6 +55,8 @@ public class KafkaConsumerConfig {
         factory.setConsumerFactory(consumerFactory);
 
         // factory.setConcurrency(3); // https://stackoverflow.com/a/55033589/4210068
+        // https://stackoverflow.com/a/68978435/4210068
+        // https://docs.spring.io/spring-kafka/docs/current/reference/html/#message-listener-container
 
         // factory.setBatchListener(true);
         // factory.getContainerProperties().setPollTimeout(3000);
