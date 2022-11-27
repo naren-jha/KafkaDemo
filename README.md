@@ -1,9 +1,10 @@
 # KafkaDemo
 
-- https://www.madhur.co.in/blog/2020/08/30/kafka-consumer-multithreading.html#:~:text=In%20the%20multi%2Dthreaded%20consumer,them%20to%20process%20in%20parallel.
 
 ## Resources
-### Videos
+
+* https://www.madhur.co.in/blog/2020/08/30/kafka-consumer-multithreading.html#:~:text=In%20the%20multi%2Dthreaded%20consumer,them%20to%20process%20in%20parallel.
+* https://docs.google.com/document/d/1kFx9WSU86ivEemsnacM1y4yG6cCNeIeFxiBYjJ5pvVU/edit
 * https://youtu.be/SqVfCyfCJqw
 
 ### Docs
