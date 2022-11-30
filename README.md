@@ -7,6 +7,7 @@
 * https://docs.google.com/document/d/1kFx9WSU86ivEemsnacM1y4yG6cCNeIeFxiBYjJ5pvVU/edit
 * https://youtu.be/SqVfCyfCJqw
 * https://www.baeldung.com/spring-kafka
+* https://youtu.be/R873BlNVUB4
 
 #### Stackoverflow -
 * https://stackoverflow.com/search?q=user:1240763+[spring-kafka]
@@ -16,6 +17,8 @@
 * https://stackoverflow.com/q/48254650/4210068
 * https://stackoverflow.com/a/64012713/4210068
 * https://stackoverflow.com/a/50254280/4210068
+* https://stackoverflow.com/a/60837978/4210068
+* https://stackoverflow.com/questions/23751708/is-zookeeper-a-must-for-kafka
 
 ### Docs
 * https://docs.spring.io/spring-kafka/docs/current/reference/html/#receiving-messages
