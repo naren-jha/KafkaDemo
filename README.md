@@ -8,6 +8,8 @@
 * https://youtu.be/SqVfCyfCJqw
 * https://www.baeldung.com/spring-kafka
 * https://youtu.be/R873BlNVUB4
+* https://youtu.be/1vLMuWsfMcA
+* https://youtu.be/JalUUBKdcA0
 
 #### Stackoverflow -
 * https://stackoverflow.com/search?q=user:1240763+[spring-kafka]
